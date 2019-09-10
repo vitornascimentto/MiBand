@@ -1,0 +1,49 @@
+.bird {
+    display: block;
+    width: 100px;
+    height: 150px;
+    background-color: #0089FF;
+    margin-left: 25px;
+    border-radius: 50px 50px 100px 0;
+    transform: rotateZ(30deg);
+    position: relative;
+}
+
+.bird:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 15px solid transparent;
+    border-left: 25px solid #FFCA00;
+    transform: rotateZ(-30deg);
+    right: -29px;
+    top: 2px
+}
+
+.bird:after {
+    content: '';
+    display: block;
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 90px;
+    background-color: #006ECD;
+    border-radius: 50px 50px 100px 0;
+    transform: rotateZ(90deg);
+    top: 40px;
+    left: -20px;
+}
+
+.externa {
+    position: relative;
+    
+}
+.interna {
+    left:50%;
+    top:50%;
+    margin-left:-80px; /* Metade do valor da Largura */
+    margin-top:-50px; /* Metade da valor da Altura */
+    position:absolute;
+}
